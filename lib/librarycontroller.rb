@@ -24,6 +24,7 @@ class MusicLibraryController
         self.send("self.#{snake_case}")
       rescue
         @input = gets.strip
+      end
     end
   end
 
