@@ -3,4 +3,4 @@ Bundler.require
 
 
 require_all 'lib'
-require_all 'lib/concerns'
+# require_all 'lib/concerns'
