@@ -2,8 +2,8 @@ class Song
   @@all = []
   attr_accessor :name
   attr_reader :artist, :genre
-  include Concerns::CommonInstanceMethods
-  extend Concerns::CommonClassMethods
+  include Common::InstanceMethods
+  extend Common::ClassMethods
   extend Concerns::Findable
 
   def initialize(name, artist=nil, genre=nil)
