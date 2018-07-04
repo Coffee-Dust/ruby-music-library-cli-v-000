@@ -1,3 +1,9 @@
+module Common
+
+
+end
+
+
 module Common::ClassMethods
 
   def create(name)
