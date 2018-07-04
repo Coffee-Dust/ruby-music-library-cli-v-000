@@ -18,6 +18,10 @@ class MusicLibraryController
 
     while @input != "exit" do
       @input = gets.strip
+      begin
+        self.send(@input)
+      rescue
+        puts "Invalid input!"
     end
   end
 
