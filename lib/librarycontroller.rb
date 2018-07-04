@@ -19,13 +19,13 @@ class MusicLibraryController
     while @input != "exit" do
       @input = gets.strip
       snake_case = @input.split(" ").join("_")
-
-      begin
-        self.send("self.#{snake_case}")
-      rescue NoMethodError
-        puts "invalid fewl"
+      if @input != "exit"
+        begin
+          self.send("self.#{snake_case}")
+        rescue NoMethodError
+          puts "invalid fewl"
+        end
       end
-
     end
   end
 
