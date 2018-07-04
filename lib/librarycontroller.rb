@@ -18,13 +18,17 @@ class MusicLibraryController
 
     while @input != "exit" do
       @input = gets.strip
-      snake_case = @input.split(" ").join("_")
-      if @input != "exit"
-        begin
-          self.send(snake_case)
-        rescue NoMethodError
-          puts "invalid fewl"
-        end
+
+      case @input
+        when condition
+          self.list_songs
+        when condition
+          self.list_artists
+        when condition
+        when condition
+        when condition
+        when condition
+        
       end
     end
   end
