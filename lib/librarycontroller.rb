@@ -31,7 +31,7 @@ class MusicLibraryController
         when condition
           self.list_songs_by_genre
         when condition
-
+          self.play_song
       end
     end
   end
