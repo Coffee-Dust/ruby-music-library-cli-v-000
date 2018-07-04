@@ -1,4 +1,4 @@
-module Concerns::CommonClassMethods
+module Common::ClassMethods
 
   def create(name)
     self.new(name).tap { |instance|
@@ -15,7 +15,7 @@ module Concerns::CommonClassMethods
   end
 end#CommonClassMethods
 
-module Concerns::CommonInstanceMethods
+module Common::InstanceMethods
   def initialize(name)
     @name = name
   end
