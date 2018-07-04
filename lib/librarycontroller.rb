@@ -23,6 +23,7 @@ class MusicLibraryController
       begin
         self.send("self.#{snake_case}")
       rescue NoMethodError
+        puts "invalid"
       end
 
     end
