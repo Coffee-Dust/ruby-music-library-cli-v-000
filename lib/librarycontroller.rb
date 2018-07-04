@@ -22,7 +22,7 @@ class MusicLibraryController
 
       begin
         self.send("self.#{snake_case}")
-      rescue
+      rescue NoMethodError
         @input = gets.strip
       end
     end
