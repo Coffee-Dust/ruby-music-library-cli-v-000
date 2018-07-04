@@ -16,6 +16,11 @@ module Concerns::CommonClassMethods
 end#CommonClassMethods
 
 module Concerns::CommonInstanceMethods
+  def initialize(name)
+    @name = name
+  end
 
-
+  def save
+    self.class.all << self
+  end
 end
