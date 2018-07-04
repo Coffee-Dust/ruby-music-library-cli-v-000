@@ -21,7 +21,6 @@ class MusicLibraryController
       begin
         self.send(@input)
       rescue
-        puts "Invalid input!"
         self.call
     end
   end
