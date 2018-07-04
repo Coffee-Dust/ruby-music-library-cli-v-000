@@ -1,8 +1,8 @@
 class Artist
   @@all = []
   attr_accessor :name
-  include Common::InstanceMethods
-  extend Common::ClassMethods
+  # include Common::InstanceMethods
+  # extend Common::ClassMethods
   extend Concerns::Findable
 
   def initialize(name)
