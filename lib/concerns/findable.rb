@@ -13,3 +13,7 @@ module Concerns::Findable
   end
 
 end#Findable
+
+module Concerns
+
+end#endof Concerns
