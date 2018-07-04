@@ -20,11 +20,11 @@ class MusicLibraryController
       @input = gets.strip
 
       case @input
-        when condition
+        when "list songs"
           self.list_songs
-        when condition
+        when "list artists"
           self.list_artists
-        when condition
+        when "list genres"
           self.list_genres
         when condition
           self.list_songs_by_artist
