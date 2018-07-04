@@ -19,6 +19,7 @@ class MusicLibraryController
     while @input != "exit" do
       @input = gets.strip
       snake_case = @input.split(" ").join("_")
+      binding.pry
       if @input != "exit"
         begin
           self.send("self.#{snake_case}")
