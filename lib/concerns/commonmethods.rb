@@ -1,32 +1,30 @@
 module Common
 
+  module ClassMethods
 
-end
+    def create(name)
+      self.new(name).tap { |instance|
+        instance.save
+      }
+    end
 
+    def all
+      self.class_variable_get("@@all")
+    end
 
-module Common::ClassMethods
-
-  def create(name)
-    self.new(name).tap { |instance|
-      instance.save
-    }
+    def destroy_all
+      self.all.clear
+    end
   end
 
-  def all
-    self.class_variable_get("@@all")
+  module InstanceMethods
+    def initialize(name)
+      @name = name
+    end
+
+    def save
+      self.class.all << self
+    end
   end
 
-  def destroy_all
-    self.all.clear
-  end
-end#CommonClassMethods
-
-module Common::InstanceMethods
-  def initialize(name)
-    @name = name
-  end
-
-  def save
-    self.class.all << self
-  end
-end
+end#endof Common
