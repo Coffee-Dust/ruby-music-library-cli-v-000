@@ -20,7 +20,7 @@ class MusicLibraryController
       @input = gets.strip
       snake_case = @input.split(" ").join("_")
 
-      self.send(snake_case)
+      self.send("self.#{snake_case}")
     end
   end
 
