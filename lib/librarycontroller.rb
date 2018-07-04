@@ -23,9 +23,9 @@ class MusicLibraryController
       begin
         self.send("self.#{snake_case}")
       rescue NoMethodError
-        
+        self.call
       end
-      
+
     end
   end
 
