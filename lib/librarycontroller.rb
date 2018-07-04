@@ -25,10 +25,13 @@ class MusicLibraryController
         when condition
           self.list_artists
         when condition
+          self.list_genres
         when condition
+          self.list_songs_by_artist
         when condition
+          self.list_songs_by_genre
         when condition
-        
+
       end
     end
   end
